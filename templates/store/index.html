@@ -4,17 +4,17 @@
 
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-12 col-lg-7 p-4 rounded-3 bg-white">
-                <p class="text-secondary fs-4 mb-0 mt-5 mb-3">20% OFF Today Only! <img src="https://cdn-icons-png.flaticon.com/128/9004/9004955.png" width="30" alt=""></p>
-                <h1 class="display-4 fw-bold">Everything Tech, <span class="text-success"> <br> Best Prices <br><span class="text-dark">& Free Delivery</span></span></h1>
-                <p class="text-secondary fs-6 mt-4">Welcome to FastCart, shop faster, easier, securely, with good deals, customer support, fast refunds and many more amazing features that awaits you!</p>
+                <p class="text-secondary fs-4 mb-0 mt-5 mb-3">¡20% de descuento solo hoy! <img src="https://cdn-icons-png.flaticon.com/128/9004/9004955.png" width="30" alt=""></p>
+                <h1 class="display-4 fw-bold">Todos los productos,<span class="text-success"> <br>con los mejores precios <br><span class="text-dark">del hueco</span></span></h1>
+                <p class="text-secondary fs-6 mt-4">¡Bienvenido a FlashStore, compra más rápido, más fácil, de forma segura, con buenas ofertas, atención al cliente, reembolsos rápidos y muchas sorpresas!</p>
                 <div class="d-flex align-items-center gap-2 mt-5">
                     <div class="d-flex align-items-center border  rounded-3 bg-light  w-75" s>
-                        <input type="text" class="form-control shadow-none border-0 bg-transparent" placeholder="Search Item" name="" id="" />
+                        <input type="text" class="form-control shadow-none border-0 bg-transparent" placeholder="Buscar artículo" name="" id="" />
                     </div>
                     <a href="{% url 'store:shop' %}" class="btn bg-primary  text-white rounded "> <i class="fas fa-search text-white"></i></a>
                 </div>
                 <div class="d-flex justify-content-start gap-4 align-items-center mt-3">
-                    <p class="text-secondary">Free Delivery Today Only! <b>Terms & Confitions</b>Apply </p>
+                    <p class="text-secondary">¡Entrega gratis solo por hoy! <b>Términos y condiciones </b>Aplicar </p>
                 </div>
                 <div class="d-flex align-items-center justify-content-start gap-5 fs-5 text-secondary mt-2">
                     <i class="fab text-success fa-shopify"></i>
@@ -37,7 +37,7 @@
         <div class="row justify-content-center">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                 <div class="sec_title position-relative text-center">
-                    <h1 class="ft-bold pt-3">Trending Categories <img src="https://cdn-icons-png.flaticon.com/128/7183/7183999.png" width="40" alt=""></h1>
+                    <h1 class="ft-bold pt-3">Categorías en tendencia <img src="https://cdn-icons-png.flaticon.com/128/7183/7183999.png" width="40" alt=""></h1>
                 </div>
             </div>
         </div>
@@ -77,7 +77,7 @@
         <div class="row justify-content-center">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                 <div class="sec_title position-relative text-center">
-                    <h1 class="ft-bold pt-3">Popular Products <img src="https://cdn-icons-png.flaticon.com/128/785/785116.png" width="40" alt=""></h1>
+                    <h1 class="ft-bold pt-3">Productos populares <img src="https://cdn-icons-png.flaticon.com/128/785/785116.png" width="40" alt=""></h1>
                 </div>
             </div>
         </div>
@@ -124,7 +124,7 @@
                                     <div class="elis_rty"><span class="ft-bold text-dark fs-sm">${{p.price}}</span></div>
                                 </div>
                                 <div class="d-flex align-items-center gap-3">
-                                        <button type="button" class="btn btn-sm bg-primary text-white rounded add_to_cart" data-id="{{p.id}}">Add to cart <i class="fas fa-shopping-cart ms-2"></i></button>
+                                        <button type="button" class="btn btn-sm bg-primary text-white rounded add_to_cart" data-id="{{p.id}}">Agregar al carrito <i class="fas fa-shopping-cart ms-2"></i></button>
                                         <input type="hidden" class="quantity" value="1" name="" id="">
                                         <a href="#" class="add_to_wishlist" data-product_id="{{p.id}}"><i class="fas fa-heart fs-4 text-black"></i></a>
                                 </div>
@@ -138,7 +138,7 @@
         <div class="row justify-content-center">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                 <div class="position-relative text-center">
-                    <a href="{% url 'store:shop' %}" class="btn bg-dark text-light rounded btn-sm mt-5">Shop Now <i class="fas fa-arrow-right ms-2"></i></a>
+                    <a href="{% url 'store:shop' %}" class="btn bg-dark text-light rounded btn-sm mt-5">Compra ahora <i class="fas fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
         </div>

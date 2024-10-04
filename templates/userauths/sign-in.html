@@ -5,8 +5,8 @@
             <div class="colxl-12 col-lg-12 col-md-12">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="{% url 'store:index' %}">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Login</li>
+                        <li class="breadcrumb-item"><a href="{% url 'store:index' %}">Inicio</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Inicio de sesión</li>
                     </ol>
                 </nav>
             </div>
@@ -18,18 +18,18 @@
     <div class="container">
         <div class="row align-items-start justify-content-center">
             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                <h1 class="fw-bold mb-2">Sign In <i class="fas fa-sign-in-alt ms-2"></i></h1>
-                <p class="mb-3">Welcome back, sign in to continue!</p>
+                <h1 class="fw-bold mb-2">Iniciar sesión <i class="fas fa-sign-in-alt ms-2"></i></h1>
+                <p class="mb-3">¡Bienvenido de nuevo, inicia sesión para continuar!</p>
 
                 <form class="border p-3 rounded" method="POST">
                     {% csrf_token %}
                     <div class="form-group mb-4">
-                        <label>Email Address *</label>
+                        <label>Correo *</label>
                         {{form.email}}
                     </div>
 
                     <div class="form-group mb-4">
-                        <label>Password *</label>
+                        <label>Contraseña *</label>
                         {{form.password}}
                     </div>
 
@@ -42,7 +42,7 @@
                         <div class="d-flex align-items-center justify-content-between">
                             
                             <div class="eltio_k2">
-                                <a href="{% url 'password_reset' %}">Lost Your Password?</a>
+                                <a href="{% url 'password_reset' %}">¿Olvidaste la contraseña?</a>
                             </div>
                         </div>
                     </div>
@@ -52,7 +52,7 @@
                     </div>
 
                     <div class="mt-3">
-                        <a href="{% url 'userauths:sign-up' %}">Don't have an account yet? Create account</a>
+                        <a href="{% url 'userauths:sign-up' %}">¿Todavia no tienes cuenta? Crea una nueva</a>
                     </div>
                 </form>
             </div>

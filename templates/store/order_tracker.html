@@ -7,9 +7,9 @@
             <div class="colxl-12 col-lg-12 col-md-12">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Customer</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Order #334564</li>
+                        <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+                        <li class="breadcrumb-item"><a href="#">Cliente</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Pedido #334564</li>
                     </ol>
                 </nav>
             </div>
@@ -35,14 +35,14 @@
                                         <div class="cart_single_caption pl-3">
                                             <h4 class="product_title fs-sm ft-medium mb-1 lh-1"> <a href="{% url 'store:product_detail' item.product.slug %}">{{item.product.name}}</a></h4>
                                             <p class="mb-2">
-                                                <span class="text-dark medium">Vendor: {{item.product.vendor.profile.full_name}}</span> <br />
+                                                <span class="text-dark medium">Vendedor: {{item.product.vendor.profile.full_name}}</span> <br />
                                                 
                                                 {% if item.color %}
                                                     <span class="text-dark medium">Color: {{item.color}}</span>
                                                 {% endif %}
 
                                                 {% if item.size %}
-                                                    <span class="text-dark medium">Size: {{item.size}}</span>
+                                                    <span class="text-dark medium">Tamaño: {{item.size}}</span>
                                                 {% endif %}
                                                     
                                             </p>
@@ -51,30 +51,30 @@
                                     </div>
                                 </div>
                                 <div class="col-xl-2 col-lg-3 col-md-3 col-6">
-                                    <p class="mb-1 p-0"><span class="text-muted">Status</span></p>
+                                    <p class="mb-1 p-0"><span class="text-muted">Estado</span></p>
                                     <div class="delv_status"><span class="ft-medium small text-warning bg-light-warning rounded px-3 py-1">{{item.order_status}}</span></div>
                                 </div>
                                 <div class="col-xl-2 col-lg-4 col-md-4 col-6">
-                                    <p class="mb-1 p-0"><span class="text-muted">Payment Status</span></p>
+                                    <p class="mb-1 p-0"><span class="text-muted">Estado del pago</span></p>
                                     <h6 class="mb-0 ft-medium fs-sm">{{item.payment_status}}</h6>
                                 </div>
                                 <div class="col-xl-2 col-lg-4 col-md-4 col-6">
-                                    <p class="mb-1 p-0"><span class="text-muted">Order Date/Time</span></p>
+                                    <p class="mb-1 p-0"><span class="text-muted">Fecha y hora del pedido</span></p>
                                     <h6 class="mb-0 ft-medium fs-sm">{{item.order.date}}</h6>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
-                    <h4 class="mt-5 mb-3 fw-bold">Track Order</h4>
+                    <h4 class="mt-5 mb-3 fw-bold">Rastrear pedido</h4>
                     <div class="">
                         <h5 class="mb-2 fs-sm">
-                            <span class="fw-bold">Tracking ID: </span> 
+                            <span class="fw-bold">ID de rastreo: </span> 
                             {{item.tracking_id|default:"Not added yet"}} 
                             <a href="javascript:void(0)" class="copy-link"><i class="fas fa-copy ms-1 text-primary fs-5"></i></a>
                         </h5>
                         <h5 class="mb-2 fs-sm">
-                            <span class="fw-bold">Shipping Service: </span> 
+                            <span class="fw-bold">Servicio de envío: </span> 
                             {{item.shipping_service|default:"Not added yet"}}
                         </h5>
                         <input type="text" value="{{item.tracking_id}}" hidden id="tracking-id">
