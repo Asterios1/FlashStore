@@ -20,7 +20,7 @@
                     <nav id="navigation" class="navigation navigation-landscape">
                         <div class="nav-header">
                             <a class="nav-brand" href="{% url 'store:index' %}">
-                                <img style="width: 170px; object-fit: contain;" src="{% static 'assets/img/logo.png' %}" class="logo" alt="" />
+                                <img style="width: 24px; object-fit: contain;" src="{% static 'assets/img/bolt.png' %}" class="logo" alt="" />
                             </a>
                             <div class="nav-toggle"></div>
                             <div class="mobile_nav">
@@ -42,12 +42,12 @@
                         </div>
                         <div class="nav-menus-wrapper" style="transition-property: none">
                             <ul class="nav-menu">
-                                <li><a href="/">Home</a></li>
+                                <li><a href="/">Inicio</a></li>
                                 <li>
-                                    <a href="{% url 'store:shop' %}">Shop</a>
+                                    <a href="{% url 'store:shop' %}">Tienda</a>
                                 </li>
                                  <li>
-                                    <a href="javascript:void(0);">Category</a>
+                                    <a href="javascript:void(0);">Categorias</a>
                                     <ul class="nav-dropdown nav-submenu">
                                         
                                         {% for c in category_ %}
@@ -57,43 +57,43 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);">Vendor</a>
+                                    <a href="javascript:void(0);">Vendedor</a>
                                     <ul class="nav-dropdown nav-submenu">
                                         <li><a href="{% url 'vendor:dashboard' %}">Dashboard</a></li>
-                                        <li><a href="{% url 'vendor:products' %}">Products</a></li>
-                                        <li><a href="{% url 'vendor:create_product' %}">Create Product</a></li>
-                                        <li><a href="{% url 'vendor:orders' %}">Orders</a></li>
-                                        <li><a href="{% url 'vendor:coupons' %}">Coupons</a></li>
-                                        <li><a href="{% url 'vendor:notis' %}">Notifications</a></li>
+                                        <li><a href="{% url 'vendor:products' %}">Productos</a></li>
+                                        <li><a href="{% url 'vendor:create_product' %}">Crear Producto</a></li>
+                                        <li><a href="{% url 'vendor:orders' %}">Pedidos</a></li>
+                                        <li><a href="{% url 'vendor:coupons' %}">Coupones</a></li>
+                                        <li><a href="{% url 'vendor:notis' %}">Notificaciones</a></li>
                                         <li><a href="{% url 'vendor:reviews' %}">Reviews</a></li>
-                                        <li><a href="{% url 'vendor:notis' %}">Notis</a></li>
-                                        <li><a href="{% url 'vendor:profile' %}">Profile</a></li>
+                                        <li><a href="{% url 'vendor:notis' %}">Notas</a></li>
+                                        <li><a href="{% url 'vendor:profile' %}">Perfil</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);">Customer</a>
+                                    <a href="javascript:void(0);">Comprador</a>
                                     <ul class="nav-dropdown nav-submenu">
                                         <li><a href="{% url 'customer:dashboard' %}">Dashboard</a></li>
-                                        <li><a href="{% url 'customer:orders' %}">Orders</a></li>
+                                        <li><a href="{% url 'customer:orders' %}">Pedidos</a></li>
                                         <li><a href="{% url 'customer:wishlist' %}">Wishlist</a></li>
-                                        <li><a href="{% url 'customer:addresses' %}">Address</a></li>
-                                        <li><a href="{% url 'customer:notis' %}">Notifications</a></li>
-                                        <li><a href="{% url 'customer:profile' %}">Profile</a></li>
+                                        <li><a href="{% url 'customer:addresses' %}">Dirección</a></li>
+                                        <li><a href="{% url 'customer:notis' %}">Notificaciones</a></li>
+                                        <li><a href="{% url 'customer:profile' %}">Perfil</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);">Pages</a>
+                                    <a href="javascript:void(0);">Paginas</a>
                                     <ul class="nav-dropdown nav-submenu">
                                         <li><a href="{% url 'blog:blog_list' %}">Blog</a></li>
-                                        <li><a href="{% url 'store:about' %}">About Us</a></li>
-                                        <li><a href="{% url 'store:contact' %}">Contact</a></li>
+                                        <li><a href="{% url 'store:about' %}">Acerca de nosotros</a></li>
+                                        <li><a href="{% url 'store:contact' %}">Contacto</a></li>
                                         <li><a href="{% url 'store:faqs' %}">FAQs</a></li>
-                                        <li><a href="{% url 'store:privacy_policy' %}">Privacy Policy</a></li>
-                                        <li><a href="{% url 'store:terms_conditions' %}">Terms and Conditions</a></li>
+                                        <li><a href="{% url 'store:privacy_policy' %}">Politica de privacidad</a></li>
+                                        <li><a href="{% url 'store:terms_conditions' %}">Terminos y condiciones</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="{% url 'store:order_tracker_page' %}">Track Order <i class="fas fa-truck ms-1"></i></a>
+                                    <a href="{% url 'store:order_tracker_page' %}">Rastrear pedido <i class="fas fa-truck ms-1"></i></a>
                                 </li>
                             </ul>
 
@@ -118,14 +118,14 @@
                                 {% if request.user.is_authenticated %}
                                     
                                     <li>
-                                        <a href="{% url 'userauths:sign-out' %}" class="btn bg-primary py-2 px-4 rounded text-white"><i class="fas fa-sign-out-alt me-1"></i> Sign Out </a>
+                                        <a href="{% url 'userauths:sign-out' %}" class="btn bg-primary py-2 px-4 rounded text-white"><i class="fas fa-sign-out-alt me-1"></i> Cerrar sesión </a>
                                     </li>
                                 {% else %}
                                     <li>
-                                        <a href="{% url 'userauths:sign-in' %}" class="btn bg-primary py-2 px-4 rounded text-white">Sign In <i class="fas fa-sign-in-alt ms-1"></i></a>
+                                        <a href="{% url 'userauths:sign-in' %}" class="btn bg-primary py-2 px-4 rounded text-white">Iniciar sesión<i class="fas fa-sign-in-alt ms-1"></i></a>
                                     </li>
                                     <li>
-                                        <a href="{% url 'userauths:sign-up' %}" class="btn bg-primary py-2 px-4 rounded text-white">Sign Up <i class="fas fa-user-plus ms-1"></i></a>
+                                        <a href="{% url 'userauths:sign-up' %}" class="btn bg-primary py-2 px-4 rounded text-white">Registrarse <i class="fas fa-user-plus ms-1"></i></a>
                                     </li>
                                 {% endif %}
                                     
@@ -171,21 +171,21 @@
 
                             <div class="col-xl-4 col-lg-4 col-md-2 col-sm-12">
                                 <div class="footer_widget">
-                                    <h4 class="widget_title">Supports</h4>
+                                    <h4 class="widget_title">Soporte</h4>
                                     <ul class="footer-menu">
-                                        <li><a href="#">Contact Us</a></li>
-                                        <li><a href="#">About Page</a></li>
-                                        <li><a href="#">FAQ's Page</a></li>
-                                        <li><a href="#">Privacy Policy</a></li>
-                                        <li><a href="#">Terms and Conditions</a></li>
+                                        <li><a href="#">Contactanos</a></li>
+                                        <li><a href="#">Acerca de la pagina</a></li>
+                                        <li><a href="#">Pagina FAQ's</a></li>
+                                        <li><a href="#">Politica de privacidad</a></li>
+                                        <li><a href="#">Terminos y condiciones</a></li>
                                     </ul>
                                 </div>
                             </div>
 
                             <div class="col-xl-4 col-lg-4 col-md-3 col-sm-12">
                                 <div class="footer_widget">
-                                    <h4 class="widget_title">Subscribe</h4>
-                                    <p>Receive updates, hot deals, discounts sent straignt in your inbox daily</p>
+                                    <h4 class="widget_title">Subscribirse</h4>
+                                    <p>Reciba actualizaciones, ofertas especiales y descuentos enviados directamente a su bandeja de entrada todos los días.</p>
                                     <div class="foot-news-last">
                                         <div class="input-group">
                                             <input type="text" class="form-control" placeholder="Email Address" />

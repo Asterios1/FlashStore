@@ -6,9 +6,9 @@
             <div class="colxl-12 col-lg-12 col-md-12">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Customer</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Address</li>
+                        <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+                        <li class="breadcrumb-item"><a href="#">Comprador</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Dirección</li>
                     </ol>
                 </nav>
             </div>
@@ -24,9 +24,9 @@
 
             <div class="col-12 col-md-12 col-lg-8 col-xl-8">
                 <div class="mb-4 d-flex align-items-center justify-content-between">
-                    <h4 class="mb-0 mb-2 fw-bold">Address</h4>
+                    <h4 class="mb-0 mb-2 fw-bold">Dirección</h4>
                     <div>
-                        <a href="{% url 'customer:address_create' %}" class="btn btn-sm text-white bg-primary small rounded ft-medium">Create Address <i class="fas fa-plus ms-1"></i></a>
+                        <a href="{% url 'customer:address_create' %}" class="btn btn-sm text-white bg-primary small rounded ft-medium">Crear dirección <i class="fas fa-plus ms-1"></i></a>
                     </div>
                 </div>
 
@@ -36,7 +36,7 @@
                             <div class="card-wrap border rounded mb-4">
                                 <div class="card-wrap-header px-3 py-2 br-bottom d-flex align-items-center justify-content-between">
                                     <div class="card-heafder-flex">
-                                        <h4 class="fs-md ft-bold mb-1">Shipping Address</h4>
+                                        <h4 class="fs-md ft-bold mb-1">Dirección de envío</h4>
                                         <div class="">
                                             <div class="">
                                                 <a href="{% url 'customer:address_detail' address.id %}" class="btn btn-sm text-white bg-primary small rounded ft-medium"><i class="fas fa-edit"></i></a>
@@ -46,14 +46,14 @@
                                     </div>
                                 </div>
                                 <div class="card-wrap-body px-3 py-3">
-                                    <p class="mb-0"><span class="fw-bold">Full Name:</span> {{address.full_name}}</p>
-                                    <p class="mb-0"><span class="fw-bold">Email:</span> {{address.email}}</p>
-                                    <p class="mb-0"><span class="fw-bold">Mobile:</span> {{address.mobile}}</p>
+                                    <p class="mb-0"><span class="fw-bold">Nombre completo:</span> {{address.full_name}}</p>
+                                    <p class="mb-0"><span class="fw-bold">Correo:</span> {{address.email}}</p>
+                                    <p class="mb-0"><span class="fw-bold">Celular:</span> {{address.mobile}}</p>
 
-                                    <p class="mb-0"><span class="fw-bold">Address:</span> {{address.address}}</p>
-                                    <p class="mb-0"><span class="fw-bold">City:</span> {{address.city}}</p>
-                                    <p class="mb-0"><span class="fw-bold">State:</span> {{address.state}}</p>
-                                    <p class="mb-0"><span class="fw-bold">Country:</span> {{address.country}}</p>
+                                    <p class="mb-0"><span class="fw-bold">Dirección:</span> {{address.address}}</p>
+                                    <p class="mb-0"><span class="fw-bold">Ciudad:</span> {{address.city}}</p>
+                                    <p class="mb-0"><span class="fw-bold">Departamento:</span> {{address.state}}</p>
+                                    <p class="mb-0"><span class="fw-bold">País:</span> {{address.country}}</p>
                                 </div>
                             </div>
                         </div>

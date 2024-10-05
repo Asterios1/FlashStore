@@ -944,7 +944,7 @@ html body .text-themecolor {
 /*-------------- GLobal Settings: Background Colors ----------------*/
 
 .bg-primary {
-    background-color: #5b1cee !important;
+    background-color: #FABC3F !important;
     color: #fff;
 }
 
@@ -2834,7 +2834,7 @@ span.expiration {
     }
     .header.header-dark,
     .headerd.header-dark {
-        background-color: #031424;
+        background-color:  #E40404;;
     }
     .header.header-dark .nav-brand,
     .header.header-dark .nav-brand:focus,

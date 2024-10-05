@@ -6,9 +6,9 @@
             <div class="colxl-12 col-lg-12 col-md-12">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Customer</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Notification</li>
+                        <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+                        <li class="breadcrumb-item"><a href="#">Comprador</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Notificaciones</li>
                     </ol>
                 </nav>
             </div>
@@ -22,7 +22,7 @@
 
 
             <div class="col-12 col-md-12 col-lg-8 col-xl-8">
-                <h4 class="mb-0 mb-4 fw-bold">Notifications ({{notis_list.count}} Unread)</h4>
+                <h4 class="mb-0 mb-4 fw-bold">Notificaciones ({{notis_list.count}} Unread)</h4>
                 <div class="card mb-4">
                     <div class="card-body">
                         <ul class="list-group list-group-flush">
@@ -34,11 +34,11 @@
                                             <div class="d-flex align-items-center justify-content-between">
                                                 <div>
                                                     <h4 class="mb-3 fw-bold">{{n.type}}</h4>
-                                                    <p class="mb-0 mt-0">Date: {{n.date}}</p>
-                                                    <p class="mb-0 mt-0">Product: {{n.order.product.name}}</p>
+                                                    <p class="mb-0 mt-0">Fecha: {{n.date}}</p>
+                                                    <p class="mb-0 mt-0">Producto: {{n.order.product.name}}</p>
                                                 </div>
                                             </div>
-                                            <a href="{% url 'customer:mark_noti_seen' n.id %}" class="btn bg-primary text-white rounded btn-sm mt-3">Mark as seen <i class="fas fa-inbox ms-2"></i></a>
+                                            <a href="{% url 'customer:mark_noti_seen' n.id %}" class="btn bg-primary text-white rounded btn-sm mt-3">Marcar como visto <i class="fas fa-inbox ms-2"></i></a>
                                         </div>
                                     </div>
                                 </li>
@@ -52,11 +52,11 @@
                     <ul class="pagination">
                         {% if notis.has_previous %}
                             <li class="page-item">
-                                <a class="page-link" href="?page={{ notis.previous_page_number }}">Previous</a>
+                                <a class="page-link" href="?page={{ notis.previous_page_number }}">Anterior</a>
                             </li>
                         {% else %}
                             <li class="page-item disabled">
-                                <span class="page-link">Previous</span>
+                                <span class="page-link">Anterior</span>
                             </li>
                         {% endif %}
 
@@ -68,11 +68,11 @@
 
                         {% if notis.has_next %}
                             <li class="page-item">
-                                <a class="page-link" href="?page={{ notis.next_page_number }}">Next</a>
+                                <a class="page-link" href="?page={{ notis.next_page_number }}">Siguiente</a>
                             </li>
                         {% else %}
                             <li class="page-item disabled">
-                                <span class="page-link">Next</span>
+                                <span class="page-link">Siguiente</span>
                             </li>
                         {% endif %}
                     </ul>

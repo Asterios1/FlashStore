@@ -12,8 +12,8 @@
     <div class="col-md-12">
 
       <article class="blog-post">
-        <p class="blog-post-meta mb-1 fs-6"><b>Date:</b> {{blog.date}}</p>
-        <p class="blog-post-meta mb-1 fs-6"><b>Author:</b> {{blog.author.profile.full_name}}</p>
+        <p class="blog-post-meta mb-1 fs-6"><b>Fecha:</b> {{blog.date}}</p>
+        <p class="blog-post-meta mb-1 fs-6"><b>Autor:</b> {{blog.author.profile.full_name}}</p>
         <p class="blog-post-meta mb-1 fs-6"><b>Likes:</b> {{total_likes}} Likes</p>
         <hr>
         <p class="fs-4 blog-content">{{blog.content|safe}}</p>
@@ -25,19 +25,19 @@
             <form action="{% url 'blog:create_comment' blog.slug %}" method="POST" class="row">
                 {% csrf_token %}
                 <div class="col-lg-12 mb-3">
-                    <label for="" class="fw-semibold">Full Name</label>
-                    <input type="text" class="form-control" name="full_name" placeholder="What's your full name?" id="">
+                    <label for="" class="fw-semibold">Nombre completo</label>
+                    <input type="text" class="form-control" name="full_name" placeholder="¿Cuál es su nombre completo?" id="">
                 </div>
                 <div class="col-lg-12 mb-3">
-                    <label for="" class="fw-semibold">Email</label>
-                    <input type="text" class="form-control" placeholder="Enter your email" name="email" id="">
+                    <label for="" class="fw-semibold">Correo</label>
+                    <input type="text" class="form-control" placeholder="Ingresa tu correo" name="email" id="">
                 </div>
                 <div class="col-lg-12 mb-3">
-                    <label for="" class="fw-semibold">Comment</label>
-                    <textarea name="content" class="form-control" id="" placeholder="Write comment"></textarea>
+                    <label for="" class="fw-semibold">Comentario</label>
+                    <textarea name="content" class="form-control" id="" placeholder="Escribe tu comentario"></textarea>
                 </div>
                 <div class="col-lg-12 mb-3">
-                    <button type="submit" class="btn bg-primary text-white rounded btn-sm">Post Comment <i class="fas fa-paper-plane ms-2"></i></button>
+                    <button type="submit" class="btn bg-primary text-white rounded btn-sm">Publicar comentario <i class="fas fa-paper-plane ms-2"></i></button>
                 </div>
             </form>
         </div>
